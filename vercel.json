@@ -1,6 +1,9 @@
 {
-  "framework": "create-react-app",
-  "buildCommand": "npm run build",
-  "outputDirectory": "build",
-  "rootDirectory": "simple-web-app"
+  "public": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/simple-web-app/$1"
+    }
+  ]
 }
